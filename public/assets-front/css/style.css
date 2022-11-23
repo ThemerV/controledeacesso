@@ -1,0 +1,167 @@
+/* resetando o style */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+html, body{
+    min-height: 100%;
+}
+
+/* HEADER */
+header{
+    background-color: #B42828;
+}
+
+header nav{
+    height: 100px;
+}
+
+header img{
+    width: 127px;
+    height: 54px;
+}
+.icon i, a, a:hover{
+    color: white;
+}
+ 
+/* FIM DO HEADER */
+
+/* MAIN */
+#row-index, #row-student, #row-view{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+
+#row-index{ /* row do index.html */
+  margin-top: 130px;
+}
+
+#row-student2{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.card i{
+    font-size: large;
+}
+
+.btn{
+    background-color: #B42828;
+}
+
+#p-student{
+    margin-top: 40px;
+}
+
+#p-teacher{
+    margin-top: 20px;
+}
+
+.p-cadastro{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.button-student{
+    text-align: center;
+}
+
+.table-responsive{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#escolhaDiscip{
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    max-width: 400px;
+    max-height: 250px;
+    left: 70px;
+}
+
+#divDisciplina, #escolhaDiscip p{
+    margin-top: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#rowDiscip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search{
+    width: 260px;
+    font-size: 12px;
+}
+
+#searchButton{
+    color: white;
+}
+
+#grupoDisciplina{
+    left: 80px;
+}
+
+#containerCadastroAluno, #containerCadastroProf{
+    left: 50px;
+    width: 1000px;
+}
+
+.div-voltar{
+    margin: 15px 155px;
+}
+
+.voltar, .voltar:hover{
+    color: #B42828;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#i-voltar{
+    color: #B42828;   
+}
+
+.div-voltar02{
+    margin: 15px 105px;
+}
+
+/* FIM DA MAIN */
+
+/* FOOTER */
+.footerPersonalizado{
+    top: 610px;
+}
+
+footer{
+    position: absolute;
+    background-color:#B42828; 
+    bottom: 0;
+    width: 100%; 
+    height: 70px;
+}
+
+footer p{
+    color: white; 
+    padding-left: 30px; 
+    padding-top: 30px;
+}
+
+/* FIM DO FOOTER */
+
+
+
+
