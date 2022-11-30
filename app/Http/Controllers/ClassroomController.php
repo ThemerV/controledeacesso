@@ -24,7 +24,7 @@ class ClassroomController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -35,7 +35,14 @@ class ClassroomController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $classroom_array = [
+            'name' => $request->name,
+            'description' => $request->description,
+        ];
+
+        $classroom = Classroom::create($classroom_array);
+
+        return redirect()->route('salasLabs');
     }
 
     /**

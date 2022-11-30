@@ -1,3 +1,4 @@
+
 /* resetando o style */
 *{
     padding: 0;
@@ -28,60 +29,70 @@ header img{
 .icon i, a, a:hover{
     color: white;
 }
- 
 /* FIM DO HEADER */
 
 /* MAIN */
-#row-index, #row-student, #row-view{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-
-
-#row-index{ /* row do index.html */
-  margin-top: 130px;
-}
-
-#row-student2{
-    display: flex;
-    justify-content: left;
-    flex-direction: row;
-    margin-top: 30px;
-}
-
-.card i{
-    font-size: large;
-}
 
 .btn{
     background-color: #B42828;
 }
 
-#p-student{
-    margin-top: 40px;
+/* Botão de voltar */
+.return-div{
+    margin: 15px 155px;
 }
 
-#p-teacher{
-    margin-top: 20px;
+.return-div02{
+    margin: 15px 105px;
 }
 
-.p-cadastro{
-    margin-top: 20px;
-    margin-left: 50px;
+.return-div03{
+    margin: 15px 144px;
 }
 
-.button-student{
-    text-align: center;
+.return-button, .return-button:hover{
+    color: #B42828;
+    font-size: 16px;
+    text-decoration: none;
 }
 
-.table-responsive{
-    text-align: center;
-    margin-top: 10px;
+.icon-return{
+    color: #B42828;   
+}
+/* Fim do botão de voltar */
+
+.row-index, .row-student{ /* Página do index e aluno*/
+    display: flex;
+    flex-direction: row;
 }
 
-#escolhaDiscip{
+
+.row-student{ /*row do aluno*/
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.row-index{ /* row do index */
+    justify-content: space-between;
+    margin-top: 130px;
+}
+
+.h5-register{
+    margin: 15px 0 15px 295px;
+}
+
+/* Cadastro do aluno */
+.register-student-div{ 
+    /* left: 50px;
+    width: 1000px; */
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    /* margin: 20px 0 0 250px ; */
+    margin: 0 auto;
+}
+
+.principal-choose-subject{
     border: 1px solid lightgrey;
     border-radius: 20px;
     max-width: 400px;
@@ -89,7 +100,7 @@ header img{
     left: 70px;
 }
 
-#divDisciplina, #escolhaDiscip p{
+.search-words-div, .principal-choose-subject p{
     margin-top: 26px;
     display: flex;
     flex-direction: row;
@@ -97,10 +108,12 @@ header img{
     align-items: center;
 }
 
-#rowDiscip{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.group-choose-subject{
+    left: 80px;
+}
+
+.register-student-button{
+    margin-top: 20px;
 }
 
 #search{
@@ -112,37 +125,112 @@ header img{
     color: white;
 }
 
-#grupoDisciplina{
-    left: 80px;
+.h5-register-student02{
+    margin: 15px 0 15px 305px;
+}
+/* Fim cadastro do aluno */
+
+/* Cadatro do professor */
+.register-div{
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    /* margin: 20px 0 0 250px ; */
+    margin: 0 auto;
 }
 
-#containerCadastroAluno, #containerCadastroProf{
-    left: 50px;
-    width: 1000px;
+.register02-div{
+    margin-top: 30px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
 }
 
-.div-voltar{
-    margin: 15px 155px;
+.choose-subject{
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    /* padding-bottom: 20px; */
+    margin-bottom: 10px;
 }
 
-.voltar, .voltar:hover{
-    color: #B42828;
+.form-register{
+    margin: 20px 0 0 20px;
+}
+
+.form-register-gti{
+    margin: 20px 0 20px 20px;
+}
+
+.h5-register02{
+    margin: 15px 0 15px 215px;
+}
+
+.register03-div{
+    margin-top: 30px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.form-register03{
+    margin: 20px 0 0 60px;
+}
+
+.form-register03S{
+    margin: 20px 0 20px 60px;
+}
+/* Fim do cadastro do professor */
+
+/* Cards do index */
+.card i{
+    font-size: large;
+}
+
+.student-card{
+    text-align: center;
+}
+
+.student-card h5{
+    margin-top: 10px;
+}
+
+/* Lista dos alunos */
+.h5-student-list{ /*h5 das páginas das listas dos alunos*/
+    margin: 20px 0px 20px 105px;
+}
+
+.font-button{
     font-size: 16px;
-    text-decoration: none;
+    margin: 10px 0 ;
+    background-color: #E7E7E7;
+    color: #B42828;
+    box-shadow: 5px 5px 3px #D4D4D4;
 }
 
-#i-voltar{
-    color: #B42828;   
+.font-button:hover{
+    color: #DF7D7D;
 }
 
-.div-voltar02{
-    margin: 15px 105px;
+.div-choose-button{
+    max-width: 500px;
+    display: flex;
+    flex-direction:column;
+    margin: 0 auto;
 }
+
+.table-responsive{
+    text-align: center;
+    margin-top: 10px;
+}
+/* Fim da lista dos alunos */
 
 /* FIM DA MAIN */
 
 /* FOOTER */
-.footerPersonalizado{
+.footer-customized{
     top: 610px;
 }
 
@@ -161,7 +249,3 @@ footer p{
 }
 
 /* FIM DO FOOTER */
-
-
-
-

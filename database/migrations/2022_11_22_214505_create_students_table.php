@@ -17,8 +17,11 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('ra');
-            $table->int('course_id');
-            $table->int('subject_id');
+            $table->bigInteger('tag');
+            $table->integer('course_id')->nullable();
+            //$table->foreign('course_id')->references('id')->on('courses');
+            $table->integer('subject_id')->nullable();
+            //$table->foreign('subject_id')->references('id')->on('subjects');
             $table->timestamps();
         });
     }

@@ -14,7 +14,10 @@ class StudentController extends Controller
      */
     public function index()
     {
-        return view('aluno');
+
+        $students = Student::all();
+
+        return view('listaAlunos', compact('students'));
     }
 
     /**
@@ -35,7 +38,15 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $student_array = [
+            'name' => $request->name,
+            'ra' => $request->ra,
+            'tag' => $request->tag,
+        ];
+
+        $students = Student::create($student_array);
+
+        return redirect()->route('student.index');
     }
 
     /**

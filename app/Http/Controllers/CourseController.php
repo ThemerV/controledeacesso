@@ -14,7 +14,9 @@ class CourseController extends Controller
      */
     public function index()
     {
-        //
+        $courses = Course::all();
+
+        return view('listaCursos', compact('courses'));
     }
 
     /**
@@ -24,7 +26,7 @@ class CourseController extends Controller
      */
     public function create()
     {
-        //
+        return view('cadastroCurso');
     }
 
     /**
@@ -35,7 +37,15 @@ class CourseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $course_array = [
+            'name' => $request->name,
+            'initials' => $request->initials,
+            'period' => $request->period,
+        ];
+
+        $course = Course::create($course_array);
+
+        return redirect()->route('course.index');
     }
 
     /**

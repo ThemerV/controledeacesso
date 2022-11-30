@@ -14,7 +14,9 @@ class TeacherController extends Controller
      */
     public function index()
     {
-        //
+        $teachers = Teacher::all();
+
+        return view('listaProfessor', compact('teachers'));
     }
 
     /**
@@ -24,7 +26,7 @@ class TeacherController extends Controller
      */
     public function create()
     {
-        //
+        return view('cadastroProf');
     }
 
     /**
@@ -35,7 +37,15 @@ class TeacherController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $teacher_array = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => $request->password
+        ];
+
+        $teacher = Teacher::create($teacher_array);
+
+        return redirect()->route('teacher.index');
     }
 
     /**
